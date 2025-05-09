@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,9 +21,41 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`flex flex-col min-h-screen ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header className="bg-gray-900 h-16 text-zinc-100 px-10 mb-8">
+          <ul className="h-full flex items-center flex-row gap-6 text-xl [&>*]:text-zinc-200 [&>*]:hover:text-teal-400 [&>*]:transition-all [&>*]:duration-300 [&>*]:hover:scale-110">
+            <Link className="" href={"/"}>
+              Blogatna
+            </Link>
+            <Link href={"/posts"}>Posts</Link>
+            <Link href={"/categories"}>Categories</Link>
+          </ul>
+        </header>
+        <main className="flex-grow">{children}</main>
+        <footer className=" w-full mt-12 bg-gray-900  text-zinc-100 px-20">
+          <div className="flex flex-row justify-baseline items-stretch py-6 gap-3">
+            {/* Navigation */}
+            <div className="flex flex-col gap-2 ">
+              <p>Our Website</p>
+              <span className="w-full bg-teal-700 h-0.5"></span>
+              <ul className="h-full flex  justify-baseline flex-col gap-2 text-md [&>*]:text-zinc-200 [&>*]:hover:text-teal-400 [&>*]:transition-all [&>*]:duration-300 [&>*]:hover:scale-110">
+                <Link className="" href={"/"}>
+                  Blogatna
+                </Link>
+                <Link href={"/posts"}>Posts</Link>
+                <Link href={"/categories"}>Categories</Link>
+              </ul>
+            </div>
+            <span className="w-0.5 bg-teal-900"></span>
+            {/* Contact info */}
+            <div className="flex flex-col gap-2 ">
+              <p>Contact Us</p>
+              <span className="w-full bg-teal-700 h-0.5"></span>
+              <p>Email: contact@blogatna.com</p>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );
