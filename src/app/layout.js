@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
               Blogatna
             </Link>
             <Link href={"/posts"}>Posts</Link>
-            <Link href={"/categories"}>Categories</Link>
+            <Link href={"/users"}>Users</Link>
           </ul>
         </header>
         <main className="flex-grow">{children}</main>
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
                   Blogatna
                 </Link>
                 <Link href={"/posts"}>Posts</Link>
-                <Link href={"/categories"}>Categories</Link>
+                <Link href={"/users"}>Users</Link>
               </ul>
             </div>
             <span className="w-0.5 bg-teal-900"></span>
