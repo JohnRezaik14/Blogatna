@@ -1,8 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎬Simple Blog with Next.js
 
-## Getting Started
+## Demo Video
 
-First, run the development server:
+▶️ Watch the full demo of Lab 1:  
+📹 [Lab 1 Demo Video – Next.js Blog App](https://drive.google.com/file/d/1nt5sZ0AhpY5_LB8uAKSvnZDC7ixz5iWF/view?usp=sharing)  
+
+##  Features
+
+This project demonstrates the implementation of a basic **Blog Website** using Next.js App Router with the following features:
+
+- Shared `RootLayout` with header and footer
+- Navigation with `Link` component
+- Category listing (Technology, Health, Travel, Finance)
+- Posts listing per category
+- Post details with description and metadata
+
+---
+
+## 🚀 Getting Started
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +31,23 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+You can start editing the app by modifying files inside the `app/` directory (e.g. `app/page.js`).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📚 Learn More
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs) – Features and API
+- [Learn Next.js](https://nextjs.org/learn) – Official tutorial
+- [Next.js GitHub Repository](https://github.com/vercel/next.js)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ☁️ Deploy on Vercel
 
-## Deploy on Vercel
+You can deploy this app using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For full instructions:  
+📄 [Next.js Deployment Documentation](https://nextjs.org/docs/app/building-your-application/deploying)
