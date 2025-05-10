@@ -1,19 +1,25 @@
-# 🎬Simple Blog with Next.js
+# Simple Blog with Next.js
 
-## Demo Video
+## ✨ Updated Features
 
-▶️ Watch the full demo of Lab 1:  
-📹 [Lab 1 Demo Video – Next.js Blog App](https://drive.google.com/file/d/1nt5sZ0AhpY5_LB8uAKSvnZDC7ixz5iWF/view?usp=sharing)  
+This project demonstrates a **Blog Website** using Next.js **App Router**, now with real-time data fetching from [JSONPlaceholder](https://jsonplaceholder.typicode.com):
 
-##  Features
+### 🔄 Dynamic Data from API:
 
-This project demonstrates the implementation of a basic **Blog Website** using Next.js App Router with the following features:
+- Users act as **Categories**
+  - URL: `https://jsonplaceholder.typicode.com/users`
+- Each user has their **Posts**
+  - URL: `https://jsonplaceholder.typicode.com/posts?userId=USER_ID`
+- Each post displays **Comments**
+  - URL: `https://jsonplaceholder.typicode.com/comments?postId=POST_ID`
 
-- Shared `RootLayout` with header and footer
-- Navigation with `Link` component
-- Category listing (Technology, Health, Travel, Finance)
-- Posts listing per category
-- Post details with description and metadata
+### 💡 Core Features:
+
+- Dynamic Routes: `/users`, `/users/[id]`, `/posts/[id]`
+- **Loading state** using `loading.js` files with MUI Spinner
+- **Error handling** for failed fetches
+- **Reusable layouts** for navigation and design
+- Styled using TailwindCSS & MUI
 
 ---
 
